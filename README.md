@@ -31,3 +31,11 @@
   </li>
   <li>추상 팩토리 패턴(Abstract Factory Pattern)</li>
 </ul>
+
+
+<h1> 빌더 패턴 간단 설명 </h1>
+```
+new Person(27, null, null, null);
+```
+// 즉 프로퍼티를 설정할 때 필요없는 값들을 설정해줄 시 null처리를 하게 되며 불필요한 코드가 늘어나게 된다.
+// 따라서 PersonBuilder 클래스를 작성하여 객체 생성을 돕게 해준다.
