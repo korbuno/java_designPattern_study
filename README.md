@@ -51,9 +51,37 @@ Person person = new PersonBuilder()
 			
 </code></pre>
 
-<p>코드가 더 명확해지며 불필요한 프로퍼티 설정을 알아서 처리해준다.</p>
+<p> 코드가 더 명확해지며 불필요한 프로퍼티 설정을 알아서 처리해준다. </p>
+<p> 개인적으로 느끼는 점 : 스프링 설정 시 자주 사용되는 구조로서 사람들에게 가장 많이 사용된다고 생각한다. </p>
 
 <a href="https://github.com/korbuno/java_designPattern_study/tree/master/src/creationalPattern/builderPattern">예제 소스 바로가기</a>
 
+<h1> 추상 팩토리 패턴 간단 설명 </h1>
+<p> 예시는 스타크래프트 게임으로 하였습니다 </p>
 
+<pre><code>
+Marine marine = BarrackFactory.getUnit("마린");
+Warith warith = StarportFactory.getUnit("레이스");
+</code></pre>
+
+<p> 배럭에서 마린을 생성하고, 스타포트에서 레이스를 생성하는 구조의 경우이다. </p>
+<p> 즉, 유닛을 생산할 건물, 생성될 유닛이 달라질 경우, 다른 객체를 참조하여야 하는 의존성 문제가 발생하며 유지 보수 작업이 늘어나게 된다. </p>
+
+<pre><code>
+		Unit marine1 = UnitFactory.getUnit(new BarrackFactory("마린1", 50));
+		Unit marine2 = UnitFactory.getUnit(new BarrackFactory("마린2", 50));
+		Unit marine3 = UnitFactory.getUnit(new BarrackFactory("마린3", 50));
+		Unit wraith1 = UnitFactory.getUnit(new StarportFactory("레이스1", 125));
+		Unit wraith2 = UnitFactory.getUnit(new StarportFactory("레이스2", 125));
+		Unit wraith3 = UnitFactory.getUnit(new StarportFactory("레이스3", 125));
+</code></pre>
+
+<p> 추상 팩토리 패턴을 사용 시 장점 </p>
+<ul>
+	<li>[다양한 유닛 -> 유닛] 으로 구조를 변경할수 있다.</li>
+	<li>[다양한 생산건물 -> 생산건물] 에서 전부 처리하여 줄 수 있다.</li>
+</ul>
+
+<p> 개인적으로 느끼는 점 : 별로 좋은 구조인지는 잘 모르겠으며, 복잡성이 증가하는 것 같다. </p>
+<p> 언젠가는 좋다고 느낄 수 있을지 의문이 든다. </p>
 
