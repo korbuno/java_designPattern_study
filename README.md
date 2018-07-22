@@ -36,6 +36,7 @@
 <h1> 빌더 패턴 간단 설명 </h1>
 <pre><code>
 new Person(27, null, null, null);
+
 </code></pre>
 <ul>
   <li>즉 프로퍼티를 설정할 때 필요없는 값들을 설정해줄 시 null처리 등을 하게 되며 불필요한 코드가 늘어나게 된다.</li>
@@ -44,10 +45,10 @@ new Person(27, null, null, null);
 
 <pre><code>
 Person person = new PersonBuilder()
-				.setAge(27)
-				.setGender("남자")
-        .build();
+			.setAge(27)
+			.setGender("남자")
+        		.build();
+			
 </code></pre>
 
-<p>보기와 같이 객체 생성이 변경된다.</p>
-<p>느끼는 점 : 코드 직관성이 더 늘어난다.</p>
+<p>코드가 더 명확해지며 불필요한 프로퍼티 설정을 알아서 처리해준다.</p>
