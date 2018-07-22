@@ -89,5 +89,5 @@ Unit wraith3 = UnitFactory.getUnit(new StarportFactory("레이스3", 125));
 <p> 개인적으로 느끼는 점 : 별로 좋은 구조인지는 잘 모르겠으며, 복잡성이 증가하는 것 같다. </p>
 <p> 언젠가는 좋다고 느낄 수 있을지 의문이 든다. </p>
 
-<a href="https://github.com/korbuno/java_designPattern_study/tree/master/src/creationalPattern/abstractFactoryPattern">예제 소스 바로가기</
+<a href="https://github.com/korbuno/java_designPattern_study/tree/master/src/creationalPattern/abstractFactoryPattern">예제 소스 바로가기</a>
 
