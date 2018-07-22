@@ -34,8 +34,7 @@
 
 
 <h1> 빌더 패턴 간단 설명 </h1>
-<a href="https://github.com/korbuno/java_designPattern_study/tree/master/src/creationalPattern/builderPattern">예제 소스 바로가기</a>
-<pre><code >
+
 new Person(27, null, null, null);
 </code></pre>
 <ul>
@@ -53,3 +52,8 @@ Person person = new PersonBuilder()
 </code></pre>
 
 <p>코드가 더 명확해지며 불필요한 프로퍼티 설정을 알아서 처리해준다.</p>
+
+<a href="https://github.com/korbuno/java_designPattern_study/tree/master/src/creationalPattern/builderPattern">예제 소스 바로가기</a>
+<pre><code >
+
+
