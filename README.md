@@ -34,7 +34,7 @@
 
 
 <h1> 빌더 패턴 간단 설명 </h1>
-<pre><code>
+<pre><code >
 new Person(27, null, null, null);
 </code></pre>
 <ul>
@@ -43,7 +43,7 @@ new Person(27, null, null, null);
   <li>따라서 PersonBuilder 클래스를 작성하여 객체 생성을 돕게 해준다.</li>
 </ul>
 
-<pre><code>
+<pre class="prettyprint"><code>
 Person person = new PersonBuilder()
 			.setAge(27)
 			.setGender("남자")
