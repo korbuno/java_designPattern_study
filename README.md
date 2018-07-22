@@ -29,7 +29,11 @@
       빌더 패턴(Builder Pattern)
     </a>
   </li>
-  <li>추상 팩토리 패턴(Abstract Factory Pattern)</li>
+	<li>
+	  <a href="#-추상-팩토리-패턴-간단-설명-">
+		추상 팩토리 패턴(Abstract Factory Pattern)
+	  </a>
+	</li>
 </ul>
 
 
@@ -68,12 +72,12 @@ Warith warith = StarportFactory.getUnit("레이스");
 <p> 즉, 유닛을 생산할 건물, 생성될 유닛이 달라질 경우, 다른 객체를 참조하여야 하는 의존성 문제가 발생하며 유지 보수 작업이 늘어나게 된다. </p>
 
 <pre><code>
-		Unit marine1 = UnitFactory.getUnit(new BarrackFactory("마린1", 50));
-		Unit marine2 = UnitFactory.getUnit(new BarrackFactory("마린2", 50));
-		Unit marine3 = UnitFactory.getUnit(new BarrackFactory("마린3", 50));
-		Unit wraith1 = UnitFactory.getUnit(new StarportFactory("레이스1", 125));
-		Unit wraith2 = UnitFactory.getUnit(new StarportFactory("레이스2", 125));
-		Unit wraith3 = UnitFactory.getUnit(new StarportFactory("레이스3", 125));
+Unit marine1 = UnitFactory.getUnit(new BarrackFactory("마린1", 50));
+Unit marine2 = UnitFactory.getUnit(new BarrackFactory("마린2", 50));
+Unit marine3 = UnitFactory.getUnit(new BarrackFactory("마린3", 50));
+Unit wraith1 = UnitFactory.getUnit(new StarportFactory("레이스1", 125));
+Unit wraith2 = UnitFactory.getUnit(new StarportFactory("레이스2", 125));
+Unit wraith3 = UnitFactory.getUnit(new StarportFactory("레이스3", 125));
 </code></pre>
 
 <p> 추상 팩토리 패턴을 사용 시 장점 </p>
