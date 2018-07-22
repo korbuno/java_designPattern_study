@@ -12,7 +12,7 @@ public class StarportFactory implements AbstractUnitFactory {
 
 	@Override
 	public Unit createUnit() {
-		return new Wraith(name, price);
+		return new StarportUnit(name, price);
 	}
 
 }

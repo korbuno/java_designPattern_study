@@ -12,6 +12,6 @@ public class BarrackFactory implements AbstractUnitFactory {
 
 	@Override
 	public Unit createUnit() {
-		return new Marine(name, price);
+		return new BarrackUnit(name, price);
 	}
 }

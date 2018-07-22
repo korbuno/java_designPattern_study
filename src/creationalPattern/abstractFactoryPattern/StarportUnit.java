@@ -1,11 +1,11 @@
 package creationalPattern.abstractFactoryPattern;
 
-public class Marine extends Unit {
+public class StarportUnit extends Unit {
 
 	private String name;
 	private int price;
 
-	public Marine(String name, int price) {
+	public StarportUnit(String name, int price) {
 		super();
 		this.name = name;
 		this.price = price;
