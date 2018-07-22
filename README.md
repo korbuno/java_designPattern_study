@@ -25,7 +25,7 @@
 
 <ul>
   <li>
-    <a href="https://github.com/korbuno/java_designPattern_study#-%EB%B9%8C%EB%8D%94-%ED%8C%A8%ED%84%B4-%EA%B0%84%EB%8B%A8-%EC%84%A4%EB%AA%85-">
+    <a href="#-빌더-패턴-간단-설명-">
       빌더 패턴(Builder Pattern)
     </a>
   </li>
