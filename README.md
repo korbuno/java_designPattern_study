@@ -24,5 +24,6 @@
 <p>결론적으로 생성 패턴을 이용하면, 무엇이 생성되고 누가 생성하는지, 언제 생성하는지, 어떻게 생성 되는지에 대해 결정하는데 유연성을 제공해준다.</p>
 
 <ul>
+  <li>빌더 패턴(Builder Pattern)</li>
   <li>추상 팩토리 패턴(Abstract Factory Pattern)</li>
 </ul>
